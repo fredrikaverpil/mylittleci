@@ -1,7 +1,5 @@
 """mylittleci gateway pattern for Loguru logger."""
 
-import sys
-
 from loguru import logger
 
 from typing import Any
