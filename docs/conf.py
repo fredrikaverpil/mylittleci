@@ -32,7 +32,8 @@ extensions = [
     'autoapi.extension',
     'sphinx_rtd_theme',
     'sphinx_autorun',
-    'sphinx.ext.doctest'
+    'sphinx.ext.doctest',
+    'm2r'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -61,3 +62,27 @@ autoapi_dirs = ['../src/mylittleci']
 
 # Readthedocs
 master_doc = 'index'
+
+# m2r
+source_suffix = ['.rst', '.md']
+
+
+import sphinx
+
+
+def monkeypatch(cls):
+    """ decorator to monkey-patch methods """
+    def decorator(f):
+        method = f.__name__
+        old_method = getattr(cls, method)
+        setattr(cls, method, lambda self, *args, **kwargs: f(old_method, self, *args, **kwargs))
+    return decorator
+
+# workaround until https://github.com/miyakogi/m2r/pull/55 is merged
+@monkeypatch(sphinx.registry.SphinxComponentRegistry)
+def add_source_parser(_old_add_source_parser, self, *args, **kwargs):
+    # signature is (parser: Type[Parser], **kwargs), but m2r expects
+    # the removed (str, parser: Type[Parser], **kwargs).
+    if isinstance(args[0], str):
+        args = args[1:]
+    return _old_add_source_parser(self, *args, **kwargs)
