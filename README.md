@@ -3,6 +3,8 @@
 ![mylittleci](https://user-images.githubusercontent.com/994357/80336623-15a73280-8858-11ea-89c1-b8b3a1b7a054.png)
 
 [![mylittleci](https://github.com/fredrikaverpil/mylittleci/workflows/mylittleci/badge.svg?branch=master)](https://github.com/fredrikaverpil/mylittleci/actions?query=workflow%3Amylittleci)
+[![Documentation Status](https://readthedocs.org/projects/mylittleci/badge/?version=latest)](https://mylittleci.readthedocs.io/en/latest/?badge=latest)
+
 
 A Python project template with focus on CI. See the [Github Actions runs](https://github.com/fredrikaverpil/mylittleci/actions?query=workflow%3Amylittleci) for details.
 

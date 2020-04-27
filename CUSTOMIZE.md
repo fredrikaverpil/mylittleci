@@ -24,6 +24,8 @@ Line lengths have been set to accomodate for black's default line length of 88.
 
 Documentation is done with [Sphinx](https://www.sphinx-doc.org/en/master/), and you can find all configuration in [docs/conf.py](docs/conf.py). View the built documentation by downloading it from one of the the [Github Actions runs](https://github.com/fredrikaverpil/mylittleci/actions?query=workflow%3Amylittleci).
 
+You can import your documentation into readthedocs e.g. by entering the details manually [here](https://readthedocs.org/dashboard/import/manual).
+
 ## Tests
 
 Enter the `test` folder. In here you can use the [tests/TEST_PLAN.md](tests/TEST_PLAN.md) and the [tests/TEST_STRATEGY.md](tests/TEST_STRATEGY.md) to define your test plan and test strategy.
