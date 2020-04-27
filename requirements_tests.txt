@@ -1,0 +1,15 @@
+wheel
+pytest
+pytest-random-order
+pytest-pylint
+pytest-flake8
+pytest-pycodestyle
+pytest-pydocstyle
+pytest-isort
+pytest-black
+pytest-yapf
+pytest-cov
+pytest-mypy
+lxml
+hypothesis
+safety
