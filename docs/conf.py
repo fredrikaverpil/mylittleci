@@ -58,3 +58,6 @@ html_static_path = ['_static']
 
 # AutoAPI
 autoapi_dirs = ['../src/mylittleci']
+
+# Readthedocs
+master_doc = 'index'
