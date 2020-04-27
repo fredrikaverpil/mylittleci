@@ -4,11 +4,11 @@ Usage:
 
     .. runblock:: console
 
-        $ example --help
+        $ calculator --help
 
     .. runblock:: console
 
-        $ example --sum 666 999
+        $ calculator --sum 666 999
 
 """
 
