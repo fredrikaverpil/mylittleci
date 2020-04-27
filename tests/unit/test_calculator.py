@@ -1,4 +1,4 @@
-"""Test the example CLI binary."""
+"""Test the example calculator CLI binary."""
 
 from subprocess import run
 from typing import List
@@ -38,13 +38,13 @@ def test_calculator_binary_exit_code(
 
 
 @given(integers=strategies.lists(strategies.integers()))
-def test_example_api(integers: List[int]) -> None:
+def test_calculator_api(integers: List[int]) -> None:
     """Add numbers together using the API."""
     result = simplemath.calculate_sum(integers=integers)
     assert result == sum(integers)
 
 
-def test_example_api_type_error() -> None:
+def test_calculator_api_type_error() -> None:
     """Add numbers together using the API."""
     with pytest.raises(simplemath.SimpleMathException) as excinfo:
         simplemath.calculate_sum("invalid input")
