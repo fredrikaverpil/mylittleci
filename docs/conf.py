@@ -15,8 +15,8 @@ import sphinx  # temporary, see monkeypatch below
 import sys
 import datetime
 
-src = os.path.join(os.path.dirname(os.path.abspath(__file__)), "src")
-sys.path.insert(0, src)
+# src = ""
+# sys.path.insert(0, src)
 
 
 # -- Project information -----------------------------------------------------
@@ -62,8 +62,6 @@ html_static_path = ["_static"]
 
 # AutoAPI
 autoapi_dirs = ["../src/mylittleci"]
-# autoapi_generate_api_submodules = True
-# autoapi_generate_api_subpackages = True
 
 # Readthedocs
 master_doc = "index"

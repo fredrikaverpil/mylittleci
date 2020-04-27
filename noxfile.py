@@ -24,7 +24,7 @@ def linting(session):
     session.run("pip", "check")  # until pip comes with deps resolver
     # session.run("pylint", "src")
     session.run("flake8", "--doctests", "src")
-    session.run("pycodestyle", "src")
+    # session.run("pycodestyle", "src")
     session.run("pydocstyle", "src")
     session.run("isort", "--recursive", "--diff", "src")
 

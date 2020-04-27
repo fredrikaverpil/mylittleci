@@ -1,5 +1,5 @@
 # pylint
 flake8
-pycodestyle
+# pycodestyle
 pydocstyle
 isort

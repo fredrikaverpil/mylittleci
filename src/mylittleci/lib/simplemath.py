@@ -8,16 +8,7 @@ class SimpleMathException(Exception):  # noqa: D101
 
 
 def calculate_sum(integers: List[int]) -> int:
-    """Sum.
-
-    Usage:
-        .. doctest::
-
-            >>> from mylittleci.lib.simplepath import calculate_sum
-            >>> calculate_sum(integers=[666, 990])
-            1656
-
-    """
+    """Return sum of given integers."""
     try:
         return sum(integers)
     except TypeError:
