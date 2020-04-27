@@ -98,7 +98,7 @@ Line lengths have been set to accomodate for black's default line length of 88.
 
 Documentation is done with [Sphinx](https://www.sphinx-doc.org/en/master/), and you can find all configuration in `docs/conf.py`. View the built documentation by downloading it from one of the the [Github Actions runs](https://github.com/fredrikaverpil/mylittleci/actions?query=workflow%3Amylittleci).
 
-You can import your documentation into readthedocs e.g. by entering the details manually [here](https://readthedocs.org/dashboard/import/manual). Then [set up a webhook](https://docs.readthedocs.io/en/stable/webhooks.html) to make pushed commits rebuild your docs.
+You can import your documentation into readthedocs e.g. by entering the details manually [here](https://readthedocs.org/dashboard/import/manual). See the `.readthedocs.yml` file for the configuration. Then [set up a webhook](https://docs.readthedocs.io/en/stable/webhooks.html) to make pushed commits rebuild your docs.
 
 ### Tests
 
