@@ -73,7 +73,7 @@ source_suffix = [".rst", ".md"]
 
 
 def monkeypatch(cls):
-    """ decorator to monkey-patch methods """
+    """ decorator to monkey-patch methods, for m2r """
 
     def decorator(f):
         method = f.__name__
