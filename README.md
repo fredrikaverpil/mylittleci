@@ -102,7 +102,7 @@ You can import your documentation into readthedocs e.g. by entering the details 
 
 ### Tests
 
-Enter the `test` folder. In here you can use the `tests/TEST_PLAN.md` and the `tests/TEST_STRATEGY.md` to define your test plan and test strategy.
+Enter the `tests` folder. In here you can use the `tests/TEST_PLAN.md` and the `tests/TEST_STRATEGY.md` to define your test plan and test strategy.
 
 Add/remove test category folders as needed. You might want to create separate nox sessions in `noxfile.py` so you can easily run e.g. the unit tests separately from other tests.
 
