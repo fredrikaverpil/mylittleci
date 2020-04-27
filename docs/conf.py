@@ -11,16 +11,18 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os
+import sphinx  # temporary, see monkeypatch below
 import sys
+import datetime
 src = os.path.join(os.path.dirname(os.path.abspath(__file__)), "src")
 sys.path.insert(0, src)
 
 
 # -- Project information -----------------------------------------------------
-
+now = datetime.datetime.now()
 project = 'mylittleci'
-copyright = '2020, John Doe'
-author = 'John Doe'
+copyright = f'{now.year}, John Doe'
+# author = 'John Doe'
 
 
 # -- General configuration ---------------------------------------------------
@@ -59,15 +61,14 @@ html_static_path = ['_static']
 
 # AutoAPI
 autoapi_dirs = ['../src/mylittleci']
+autoapi_generate_api_submodules = True
+autoapi_generate_api_subpackages = True
 
 # Readthedocs
 master_doc = 'index'
 
-# m2r
+# m2r with monkey patching
 source_suffix = ['.rst', '.md']
-
-
-import sphinx
 
 
 def monkeypatch(cls):

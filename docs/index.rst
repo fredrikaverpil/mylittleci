@@ -11,8 +11,6 @@ Welcome to mylittleci's documentation!
 
    readme_link
 
-   :caption: Contents:
-
 
 Indices and tables
 ==================
