@@ -10,19 +10,15 @@ Usage:
 
         $ example --sum 666 999
 
-    .. doctest::
-
-        >>> from mylittleci.cli import example
-        >>> example.run(integers=[666, 990])
-        1656
-
 """
 
 import argparse
-from typing import List
+import sys
+
+from mylittleci.lib.simplemath import calculate_sum
 
 
-def _parsed_args() -> argparse.Namespace:
+def get_parser() -> argparse.ArgumentParser:
     """Return the parsed arguments."""
     parser = argparse.ArgumentParser(
         description="Process some integers",
@@ -34,23 +30,20 @@ def _parsed_args() -> argparse.Namespace:
         metavar="N",
         type=int,
         nargs="+",
-        help="an integer for the accumulator",
+        help="integers to sum",
     )
-
-    return parser.parse_args()
-
-
-def run(integers: List[int]) -> int:
-    """Run main program."""
-    result = sum(integers)
-    print(result)
-    return result
+    return parser
 
 
 def main() -> None:
     """Take args and run."""
-    args = _parsed_args()
-    run(args.integers)
+    parser = get_parser()
+    args = parser.parse_args()
+    if not args.integers:
+        parser.print_help()
+        sys.exit(2)
+    result = calculate_sum(args.integers)
+    print(result)
 
 
 if __name__ == "__main__":

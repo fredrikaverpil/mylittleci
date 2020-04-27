@@ -19,8 +19,8 @@ python3 -m venv venv
 pip install -U pip
 pip install -e .
 
-# Run binaries found in venv/bin, e.g. the "example" app
-example --help
+# Run binaries found in venv/bin, e.g. the example app
+calculator --help
 ```
 
 ### Run linting, formatting, dead code search, static type checking, tests and build docs

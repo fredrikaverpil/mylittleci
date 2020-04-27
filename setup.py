@@ -19,7 +19,7 @@ url = "https://github.com/fredrikaverpil/mylittleci"
 description = "Template Python project"
 package_dir = "src"
 cli_modules = [
-    "example=mylittleci.cli.example:main",
+    "calculator=mylittleci.cli.calculator:main",
 ]
 
 setuptools.setup(
