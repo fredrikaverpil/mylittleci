@@ -22,7 +22,7 @@ def _install_wheel(session):
 def linting(session):
     session.install("-r", "requirements.txt", "-r", "requirements_linting.txt")
     session.run("pip", "check")  # until pip comes with deps resolver
-    session.run("pylint", "src")
+    # session.run("pylint", "src")
     session.run("flake8", "--doctests", "src")
     session.run("pycodestyle", "src")
     session.run("pydocstyle", "src")
