@@ -4,7 +4,7 @@
 
 [![mylittleci](https://github.com/fredrikaverpil/mylittleci/workflows/mylittleci/badge.svg?branch=master)](https://github.com/fredrikaverpil/mylittleci/actions?query=workflow%3Amylittleci)
 
-A Python project template. See the [Github Actions runs](https://github.com/fredrikaverpil/mylittleci/actions?query=workflow%3Amylittleci) for details.
+A Python project template with focus on CI. See the [Github Actions runs](https://github.com/fredrikaverpil/mylittleci/actions?query=workflow%3Amylittleci) for details.
 
 ## Quickstart
 
