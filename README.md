@@ -5,7 +5,6 @@
 [![mylittleci](https://github.com/fredrikaverpil/mylittleci/workflows/mylittleci/badge.svg?branch=master)](https://github.com/fredrikaverpil/mylittleci/actions?query=workflow%3Amylittleci)
 [![Documentation Status](https://readthedocs.org/projects/mylittleci/badge/?version=latest)](https://mylittleci.readthedocs.io/en/latest/?badge=latest)
 
-
 A Python project template with focus on CI. See the [Github Actions runs](https://github.com/fredrikaverpil/mylittleci/actions?query=workflow%3Amylittleci) for details.
 
 ## Quickstart
@@ -73,7 +72,7 @@ git push origin 1.0.0
 git push origin 1.0.0 HEAD:refs/for/master
 ```
 
-### Further customization
+## Further customization
 
 This project serves as a template for a generic Python project.
 
