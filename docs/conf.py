@@ -21,8 +21,8 @@ sys.path.insert(0, src)
 # -- Project information -----------------------------------------------------
 now = datetime.datetime.now()
 project = 'mylittleci'
-copyright = f'{now.year}, John Doe'
-# author = 'John Doe'
+copyright = f'{now.year}'
+# author = ''
 
 
 # -- General configuration ---------------------------------------------------
