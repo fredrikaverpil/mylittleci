@@ -54,11 +54,11 @@ jobs:
         name: wheel-${{ matrix.python-version }}
         path: dist
 
-    - name: Store docs
-      uses: actions/upload-artifact@v1
-      with:
-        name: docs-${{ matrix.python-version }}
-        path: docs/_build/html
+    # - name: Store docs
+    #   uses: actions/upload-artifact@v1
+    #   with:
+    #     name: docs-${{ matrix.python-version }}
+    #     path: docs/html
 
     - name: Store coverage report
       uses: actions/upload-artifact@v1

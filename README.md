@@ -32,7 +32,7 @@ nox
 
 Use Nox option `-r` to re-use the nox venv for faster execution. See `noxfile.py` for detailed info on the different sessions you can run individually using `nox -s <session_name>`.
 
-More info on Nox usage [here](https://nox.thea.codes/en/stable).
+Please consult the [Nox docs](https://nox.thea.codes/en/stable) on usage.
 
 ### Add your own code
 

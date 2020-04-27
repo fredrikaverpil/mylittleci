@@ -67,4 +67,4 @@ def build_docs(session):
     session.install("-r", "requirements.txt", "-r", "requirements_docs.txt")
     _install_wheel(session)
     session.run("pip", "check")  # until pip comes with deps resolver
-    session.run("sphinx-build", "docs", "docs/_build/html")
+    session.run("sphinx-build", "-a", "-E", "docs", "docs/html")

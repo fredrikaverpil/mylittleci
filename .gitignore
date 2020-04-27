@@ -35,7 +35,7 @@ html_mypy/
 html_cov/
 
 # sphinx
-docs/_build/html/
+docs/html/
 
 # hypothesis
 .hypothesis/
