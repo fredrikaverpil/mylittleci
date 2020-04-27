@@ -62,8 +62,8 @@ html_static_path = ["_static"]
 
 # AutoAPI
 autoapi_dirs = ["../src/mylittleci"]
-autoapi_generate_api_submodules = True
-autoapi_generate_api_subpackages = True
+# autoapi_generate_api_submodules = True
+# autoapi_generate_api_subpackages = True
 
 # Readthedocs
 master_doc = "index"
