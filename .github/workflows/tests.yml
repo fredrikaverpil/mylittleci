@@ -37,7 +37,7 @@ jobs:
 
     - name: Find uncalled/dead code
       run: |
-        nox -s dead_code_search
+        nox -s dead_code
 
     - name: Static type checking
       run: |

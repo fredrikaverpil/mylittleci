@@ -37,7 +37,7 @@ def formatting(session):
 
 
 @nox.session
-def dead_code_search(session):
+def dead_code(session):
     session.install("vulture")
     session.run("vulture", "src")
 
