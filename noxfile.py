@@ -63,7 +63,7 @@ def tests(session):
 
 
 @nox.session
-def build_docs(session):
+def docs(session):
     session.install("-r", "requirements.txt", "-r", "requirements_docs.txt")
     _install_wheel(session)
     session.run("pip", "check")  # until pip comes with deps resolver

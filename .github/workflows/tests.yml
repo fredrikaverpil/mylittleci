@@ -49,7 +49,7 @@ jobs:
 
     - name: Build docs
       run: |
-        nox -s build_docs
+        nox -s docs
 
     - name: Store wheel
       uses: actions/upload-artifact@v1
