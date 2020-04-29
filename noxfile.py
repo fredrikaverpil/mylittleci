@@ -43,7 +43,7 @@ def dead_code(session):
 
 
 @nox.session
-def static_type_checking(session):
+def typing(session):
     session.install("-r", "requirements.txt", "-r", "requirements_typing.txt")
     session.run("pip", "check")  # until pip comes with deps resolver
     session.run("mypy", "src")

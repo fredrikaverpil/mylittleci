@@ -41,7 +41,7 @@ jobs:
 
     - name: Static type checking
       run: |
-        nox -s static_type_checking
+        nox -s typing
 
     - name: Test with pytest
       run: |
