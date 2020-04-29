@@ -15,6 +15,7 @@ jobs:
         os: [ubuntu-latest, macOS-latest, windows-latest]
 
     steps:
+
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v1
@@ -29,18 +30,23 @@ jobs:
     - name: Linting
       run: |
         nox -s linting
+
     - name: Formatting
       run: |
         nox -s formatting
+
     - name: Find uncalled/dead code
       run: |
         nox -s dead_code_search
+
     - name: Static type checking
       run: |
         nox -s static_type_checking
+
     - name: Test with pytest
       run: |
         nox -s tests
+
     - name: Build docs
       run: |
         nox -s build_docs
