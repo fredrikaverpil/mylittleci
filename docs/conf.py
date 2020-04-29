@@ -35,7 +35,6 @@ extensions = [
     "autoapi.extension",
     "sphinx_rtd_theme",
     "sphinx_autorun",
-    "sphinx.ext.doctest",
     "m2r",
 ]
 
