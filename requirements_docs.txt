@@ -1,5 +1,0 @@
-sphinx
-sphinx-rtd-theme
-sphinx-autoapi
-sphinx-autorun
-m2r

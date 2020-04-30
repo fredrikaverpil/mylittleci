@@ -26,13 +26,13 @@ calculator --help
 ### Run linting, formatting, dead code search, static type checking, tests and build docs
 
 ```bash
-pip install nox
-nox
+pip install tox
+tox
 ```
 
-Use Nox option `-r` to re-use the nox venv for faster execution. See `noxfile.py` for detailed info on the different sessions you can run individually using `nox -s <session_name>`.
+Use tox option `-r` to re-use the tox venv for faster execution. See `tox.ini` for detailed info on the different sessions you can run individually using `tox -e <env_name>`.
 
-Please consult the [Nox docs](https://nox.thea.codes/en/stable) on usage.
+Please consult the [tox docs](https://tox.readthedocs.io/en/latest/) on usage.
 
 ### Add your own code
 
@@ -43,7 +43,7 @@ Please consult the [Nox docs](https://nox.thea.codes/en/stable) on usage.
 - Run the executable representing your entrypoint from `venv/bin`
 - Add test for the tool in `tests`
 - Run tests quickly to test your changes by executing Pytest: `pytest <path to your test file.py>`
-- Finally, run all tests, coverage and linting by executing Nox: `nox`
+- Finally, run all tests, coverage and linting by executing tox: `tox`
 
 Try to keep tool documentation within the module/package as module/class/function docstrings.
 
@@ -80,7 +80,7 @@ To make it your own, go through the below steps in a fork or copy of this reposi
 
 ### Decide on CI features
 
-Edit `noxfile.py` and the `requirements[_type].txt` files to use the features you want. A recommendation is e.g. to pick either black _or_ yapf, not both.
+Edit `tox.ini` to use the features you want. A recommendation is e.g. to pick either black _or_ yapf, not both.
 
 If you feel pylint is too picky, just go with flake8, rather than adding a truckload of non-default settings to pylint.
 
@@ -104,7 +104,7 @@ You can import your documentation into readthedocs e.g. by entering the details 
 
 Enter the `tests` folder. In here you can use the `tests/TEST_PLAN.md` and the `tests/TEST_STRATEGY.md` to define your test plan and test strategy.
 
-Add/remove test category folders as needed. You might want to create separate nox sessions in `noxfile.py` so you can easily run e.g. the unit tests separately from other tests.
+Add/remove test category folders as needed. You might want to create separate tox environments in `tox.ini` so you can easily run e.g. the unit tests separately from other tests.
 
 ### Replace the "mylittleci" dummy project name
 

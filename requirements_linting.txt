@@ -1,5 +1,0 @@
-# pylint
-flake8
-# pycodestyle
-pydocstyle
-isort
