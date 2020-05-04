@@ -5,6 +5,8 @@ Welcome to mylittleci's documentation!
    :maxdepth: 2
 
    readme_link
+   test_plan
+   test_strategy
 
 
 Indices and tables

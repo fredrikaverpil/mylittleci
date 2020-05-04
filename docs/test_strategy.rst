@@ -1,0 +1,1 @@
+.. mdinclude:: ../tests/TEST_STRATEGY.md
